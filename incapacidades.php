@@ -107,7 +107,13 @@
 
         <input type="date" id="fecha_fin">
 
-        <input type="text" id="tipo" placeholder="Tipo">
+        <select id="tipo">
+            <option value="">Seleccione un tipo</option>
+            <option value="enfermedad_general">Enfermedad general</option>
+            <option value="accidente_laboral">Accidente laboral</option>
+            <option value="licencia_medica">Licencia médica</option>
+            <option value="incapacidad_temporal">Incapacidad temporal</option>
+        </select>
 
         <input type="text"
                id="diagnostico_general"
@@ -252,7 +258,7 @@ async function guardar(){
         observaciones:
             document.getElementById("observaciones").value,
 
-        estado:"activa"
+        estado:"registrada"
     };
 
     if(id===""){
