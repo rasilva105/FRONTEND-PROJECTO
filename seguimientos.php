@@ -120,9 +120,11 @@
         <input type="date"
                id="proxima_revision">
 
-        <input type="text"
-               id="estado"
-               placeholder="Estado">
+        <select id="estado">
+            <option value="pendiente">Pendiente</option>
+            <option value="en_proceso">En proceso</option>
+            <option value="cerrado">Cerrado</option>
+        </select>
 
         <button class="btn btn-primary"
                 onclick="guardar()">
